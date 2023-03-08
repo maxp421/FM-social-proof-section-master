@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/social-proof-section-using-bem-and-scss-2fr61G557m
 - Live Site URL: https://maxp421.github.io/FM-social-proof-section-master/
 
 ## My process

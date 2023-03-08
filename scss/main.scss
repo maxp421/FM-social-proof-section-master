@@ -1,0 +1,5 @@
+@import 'abstracts/variables', 'abstracts/mixins', 'abstracts/functions';
+@import 'base/reset', 'base/typography', 'base/utilities';
+@import 'components/card-verified-buyer', 'components/star-rating';
+@import 'pages/social-section';
+@import 'layout/footer.scss';

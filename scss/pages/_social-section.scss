@@ -1,0 +1,64 @@
+body {
+  font-family: $ff-primary;
+  font-weight: weight(regular);
+  font-size: $fs-body;
+}
+
+@include for-desktops {
+  body {
+    font-size: 18px;
+  }
+}
+
+.social-proof {
+  background: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-mobile.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  padding-block: 4rem;
+
+  &__text {
+    text-align: center;
+
+
+    &__h2 {
+      color: $clr-primary-900;
+      font-weight: weight(bold);
+      line-height: 0.9;
+      font-size: 2.66em;
+    }
+
+    &__p {
+      color: $clr-neutral-700;
+      font-weight: weight(medium);
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@include for-laptops {
+
+  .social-proof {
+    background: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    padding-block: 6rem;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__text {
+      text-align: left;
+
+      &__h2 {
+        max-width: 300px;
+      }
+
+      &__p {
+        max-width: 40ch;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  --horizontal-padding: 1rem;
+}
+
+@include for-laptops {
+  :root {
+    --horizontal-padding: 2.5rem;
+  }
+}
+
+.container {
+  max-width: min(($max-width-desktop - var(--horizontal-padding)*2), (100% - var(--horizontal-padding)*2));
+  margin-inline: auto;
+}
+
+// *+* = every element that has a previous sibling i.e. is not first child.
+.flow>*+* {
+  --flow-space: 3em;
+  margin-block: var(--flow-space, 1em);
+}
